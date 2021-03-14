@@ -11,14 +11,15 @@ class TestController {
 
     // get request to "/test"
     router.get('/', (Request req){
-      Response.ok("The Test Controller");
+      return Response.ok("The Test Controller");
 
     });
 
-    // get request to "/test/<param>"
-    router.get('/<param>', (Request req, String param)){
-      Response.ok(param);
-    };
+    // get request to "/test/<param>?query=????"
+    router.get('/<param>', (Request req, String param){
+      print(req.url.queryParameters["query"]);// acessing a url query
+      return Response.ok(param);
+    });
 
     // catch all for "/test"
     router.all('/<ignored|.*>', (Request request) => Response.notFound('null'));
