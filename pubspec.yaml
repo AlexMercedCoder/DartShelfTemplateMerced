@@ -1,0 +1,11 @@
+name: shelfpeople
+description: a people api
+version: 0.0.1
+author: alexmerced
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+  shelf: ^1.0.0
+  shelf_router: ^1.0.0
