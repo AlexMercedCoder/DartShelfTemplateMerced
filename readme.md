@@ -9,6 +9,10 @@ or if you have NPM
 
 `npx degit AlexMercedCoder/DartShelfTemplateMerced#main projectName`
 
+**POSTGRES VERSION OF TEMPLATE**
+
+https://github.com/AlexMercedCoder/DartShelfPostgresTemplate
+
 ## Folder Structure
 
 - server.dart: the entry file that kick starts the server
@@ -35,4 +39,3 @@ or if you have NPM
 - `git push heroku master`
 
 - API Deployed!!
-
