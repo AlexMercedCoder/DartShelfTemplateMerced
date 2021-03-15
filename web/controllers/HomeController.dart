@@ -3,6 +3,7 @@ import 'package:shelf_router/shelf_router.dart';
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as shelf_io;
 import './TestController.dart';
+import '../cors.dart'
 
 class HomeController {
 
@@ -12,7 +13,7 @@ class HomeController {
 
     // main route
     router.get('/', (Request request) {
-      return Response.ok('Hello World');
+      return Response.ok('Hello World', headers: cors);
     });
 
     // Mount Other Controllers Here

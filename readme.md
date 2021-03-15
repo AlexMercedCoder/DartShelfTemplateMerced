@@ -13,6 +13,8 @@ or if you have NPM
 
 - server.dart: the entry file that kick starts the server
 
+- cors.dart: The cors header, add this into your responses like in the existing routes
+
 - controllers: folder for holding routers, HomeController has the main router and you can following the patter display by TestController to mount additonal routers.
 
 ## Deployment to Heroku using Heroku CLI
